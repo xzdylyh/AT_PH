@@ -39,7 +39,10 @@
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
   <component name="TaskManager">
-    <task active="true" id="Default" summary="Default task" />
+    <task active="true" id="Default" summary="Default task">
+      <created>1506328787306</created>
+      <updated>1506328787306</updated>
+    </task>
     <servers />
   </component>
   <component name="VcsContentAnnotationSettings">
