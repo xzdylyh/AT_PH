@@ -16,12 +16,13 @@ overStatus = 'PASSED'
 
 curTimeStr = time.strftime('%Y-%m-%d_%H-%M-%S',time.localtime()).decode('utf-8')
 curTime = time.strftime('%Y.%m.%d %H:%M:%S',time.localtime()).decode('utf-8')
-projectPath = os.path.dirname(os.getcwd())+"\\"
-rootPath = os.getcwd().split('\\')[0]+'\\'
+
+scriptPath =os.path.abspath(os.path.dirname(__file__))+'\\' #Scripts目录
+projectPath = os.path.abspath(os.path.dirname(os.path.dirname(scriptPath)))+'\\' #项目目录
+rootPath = projectPath.split('\\')[0]+'\\'
 reporterPath = projectPath+'Reporter\\LOGS\\'
 logsPath = projectPath+'logs\\'
 dataPath = projectPath+'Data\\'
-scriptPath = os.getcwd()+'\\'
 
 xlsPath = os.path.join(dataPath,'TestCase.xlsx')
 
